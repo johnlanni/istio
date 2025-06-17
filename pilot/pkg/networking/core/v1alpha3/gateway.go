@@ -628,7 +628,13 @@ func (configgen *ConfigGeneratorImpl) buildHostRDSConfig(
 
 	cacheable := true
 
+	// dependentDestinationRules includes all the destinationrules referenced by
+	// the virtualservices, which have consistent hash policy.
+	dependentDestinationRules := []*model.ConsolidatedDestRule{}
+
 	for _, vs := range hostVs {
+		_, destinationRules := istio_route.HashForVirtualService(push, node, vs)
+		dependentDestinationRules = append(dependentDestinationRules, destinationRules...)
 		vsSpec := vs.Spec.(*networking.VirtualService)
 		for _, vsHttpRoute := range vsSpec.Http {
 			// check if dynamic port exists, we should not cache RDS
@@ -698,6 +704,7 @@ func (configgen *ConfigGeneratorImpl) buildHostRDSConfig(
 		DelegateVirtualServices: push.DelegateVirtualServices(vsDependent),
 		HTTPRoutes:              httpRoutes,
 		EnvoyFilterKeys:         efKeys,
+		DestinationRules:        dependentDestinationRules,
 	}
 
 	var resource *discovery.Resource

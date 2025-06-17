@@ -1500,6 +1500,16 @@ func hashForService(push *model.PushContext,
 	return consistentHash, mergedDR
 }
 
+// Added by higress
+func HashForVirtualService(push *model.PushContext,
+	node *model.Proxy,
+	virtualService config.Config,
+) (DestinationHashMap, []*model.ConsolidatedDestRule) {
+	return hashForVirtualService(push, node, virtualService)
+}
+
+// End added by higress
+
 func hashForVirtualService(push *model.PushContext,
 	node *model.Proxy,
 	virtualService config.Config,
