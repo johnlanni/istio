@@ -10,7 +10,7 @@ replace (
 	github.com/imdario/mergo => github.com/imdario/mergo v0.3.5
 	golang.org/x/exp => golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1
 	google.golang.org/grpc => google.golang.org/grpc v1.64.0
-	istio.io/api => github.com/higress-group/api v0.0.0-20251013075830-5b9a222e72f3
+	istio.io/api => github.com/higress-group/api v0.0.0-20260211054508-efc0fe428ccc
 	istio.io/client-go => github.com/higress-group/client-go v0.0.0-20251013085901-09ed8dc4e748
 )
 

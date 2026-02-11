@@ -1778,8 +1778,8 @@ github.com/hashicorp/golang-lru/v2 v2.0.7 h1:a+bsQ5rvGLjzHuww6tVxozPZFVghXaHOwFs
 github.com/hashicorp/golang-lru/v2 v2.0.7/go.mod h1:QeFd9opnmA6QUJc5vARoKUSoFhyfM2/ZepoAG6RGpeM=
 github.com/hexops/gotextdiff v1.0.3 h1:gitA9+qJrrTCsiCl7+kh75nPqQt1cx4ZkudSTLoUqJM=
 github.com/hexops/gotextdiff v1.0.3/go.mod h1:pSWU5MAI3yDq+fZBTazCSJysOMbxWL1BSow5/V2vxeg=
-github.com/higress-group/api v0.0.0-20251013075830-5b9a222e72f3 h1:zL0wwluLpKcxLM3bC7ILLNRNXedPq6HRbrq++nl71ek=
-github.com/higress-group/api v0.0.0-20251013075830-5b9a222e72f3/go.mod h1:DTVGH6CLXj5W8FF9JUD3Tis78iRgT1WeuAnxfTz21Wg=
+github.com/higress-group/api v0.0.0-20260211054508-efc0fe428ccc h1:w7uEXjgFtoZM/5IS0ZhcI0SC0bKkYoTyIGJTbc/zpkE=
+github.com/higress-group/api v0.0.0-20260211054508-efc0fe428ccc/go.mod h1:DTVGH6CLXj5W8FF9JUD3Tis78iRgT1WeuAnxfTz21Wg=
 github.com/higress-group/client-go v0.0.0-20251013085901-09ed8dc4e748 h1:XO8wAanGfgj9++rgdnGXRrVs9YK747I9DeMOks5wZy8=
 github.com/higress-group/client-go v0.0.0-20251013085901-09ed8dc4e748/go.mod h1:E5r9p+ZZr9WudIx8f5WfUceLD9+nHHtCH31stj7j7no=
 github.com/higress-group/go-control-plane v0.0.0-20260204094726-af656ebdd1c2 h1:CmDJjC7MkJzVWGbeEG0MkYI7Q2VKtSRds0pims8VcPc=
